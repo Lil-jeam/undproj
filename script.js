@@ -6,7 +6,7 @@ const spinner = document.getElementById("loading-spinner");
 
 let allPosts = [];
 let currentIndex = 0;
-const POSTS_PER_PAGE = 30;
+const POSTS_PER_PAGE = 15;
 
 // Toggle mobile menu
 function toggleMobileMenu() {
@@ -16,7 +16,7 @@ function toggleMobileMenu() {
   icon.classList.toggle("open");
 }
 
-// Helper: Get N days ago in YYYY-MM-DD
+// Returns the date 'n' days ago in YYYY-MM-DD format
 function getDateNDaysAgo(n) {
   const date = new Date();
   date.setDate(date.getDate() - n);
@@ -46,7 +46,7 @@ async function fetchPosts() {
   }
 }
 
-// Convert UTC to user-local time
+// Convert UTC time to user-local time
 function formatToLocal(dateString) {
   const localDate = new Date(dateString);
   return localDate.toLocaleString();
