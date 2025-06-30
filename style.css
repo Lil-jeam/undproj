@@ -8,10 +8,10 @@
     --und-green: #009a44;
     --und-gray: #AEAEAE;
 }
-    body {
+body {
       font-family: "Helvetica Neue", sans-serif;
       overflow-x: hidden;
-    }
+}
 
     header {
       background-color: #000000; 
@@ -492,7 +492,7 @@ p {
   }
   .heading{
     margin-top: 8rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .post-section-inner{
     margin-left: auto;
