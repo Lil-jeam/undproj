@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UND | Leading With Purpose</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg" href="Assets\flame-full.svg">
+</head>
+
+<body>
+
+<header>
+  <div class="header-row">
+    <div id="hamburger-icon" onclick="toggleMobileMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <a href="/"><img class="logo" src="Assets/logotype-fullw.svg" title="University of North Dakota"></a>
+  </div>
+  <nav>
+    <ul class="desktop-nav">
+      <li><a href="https://und.edu/academics/index.html">ACADEMICS</a></li>
+      <li><a href="https://und.edu/admissions/index.html">ADMISSIONS</a></li>
+      <li><a href="https://und.edu/research/index.html">RESEARCH</a></li>
+      <li><a href="https://und.edu/programs/index.html">MAJORS & PROGRAMS</a></li>
+      <li><a href="https://und.edu/about/index.html">ABOUT</a></li>
+    </ul>
+  </nav>
+  <ul class="mobile-menu" id="mobile-menu">
+    <li><a href="https://und.edu/academics/index.html">ACADEMICS</a></li>
+    <li><a href="https://und.edu/admissions/index.html">ADMISSIONS</a></li>
+    <li><a href="https://und.edu/research/index.html">RESEARCH</a></li>
+    <li><a href="https://und.edu/programs/index.html">MAJORS & PROGRAMS</a></li>
+    <li><a href="https://und.edu/about/index.html">ABOUT</a></li>        
+  </ul>
+</header>
+
+
+
+
+
+<section id="president-endorsement" class="endorsement-section" aria-labelledby="president-title">
+
+<div class="container">
+  <section>
+  <h1 class="heading">Leading with Purpose</h1>
+  </section>
+    <div class="endorsement-container">
+        <img src="Assets\andrew-armacost-full-size-200204.jpg" alt="President Armacost Headshot" class="president-photo" />
+    
+
+    <section class="endorsement-section"><h2 id="president-title" class="section-title">President's Endorsement</h2>
+
+        <article class="president-message">
+      <div>
+        <h3 class="subheading">Message from the President</h3>
+      </div>
+      <p>
+        We are thrilled to announce our unwavering support for the University's latest social media campaign.
+        This initiative signifies a crucial opportunity for our community to unite, interact, and effect significant change.
+        Have thoughts or feedback on our campaign goals? We'd love to hear from you!
+      </p>
+        </article>
+    </section>
+    </div>
+    <section class="campaign-goals" aria-labelledby="goals-title">
+      <h3 id="goals-title" class="subheading">Campaign Goals</h3>
+
+      <article class="goal">
+        <h4 class="goal-title">Empowering Engagement</h4>
+        <p>
+          Our primary aim is to foster a vibrant online community where every voice is heard and valued.
+          Through active participation and collaboration, we can amplify our collective impact and bring about positive change.
+        </p>
+      </article>
+
+      <article class="goal">
+        <h4 class="goal-title">Promoting Diversity and Inclusion</h4>
+        <p>
+          Diversity is our strength, and inclusivity is our foundation.
+          We strive to create an inclusive online space that celebrates diverse perspectives, cultures, and experiences.
+          Together, we can build a community where everyone feels welcome and respected.
+        </p>
+      </article>
+
+      <article class="goal">
+        <h4 class="goal-title">Driving Innovation</h4>
+        <p>
+          Innovation drives progress, and social media is a powerful tool for sparking creativity and innovation.
+          We encourage innovative thinking and bold ideas that push the boundaries of what's possible.
+          Let's harness the power of social media to drive positive change and innovation in our community and beyond.
+        </p>
+      </article>
+    </section>
+
+    <div class="cta-link">
+      <a href="https://und.edu/social-media" target="_blank" rel="noopener noreferrer">
+        Share your thoughts and feedback &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="post-section" class="post-section">
+  <div class="post-section-inner">
+    <div class="post-section-header"> 
+      <h2>Recent Posts</h2>
+      <input
+      type="text"
+      id="post-search"
+      placeholder="Search posts..."
+      aria-label="Search posts"
+      class="inputbox"
+      />
+    </div>
+    <div id="post-list" class="post-list">
+      <!-- Posts will be inserted here dynamically -->
+    </div>
+    <div id="loading-spinner" class="spinner" hidden>
+      <div class="loader"></div>
+    </div>
+    <div id="show-more-btn" hidden><button  class="button" >More Posts</button></div>
+  </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <nav aria-label="Footer navigation">
+      <ul class="footer-links">
+        <li><a href="https://und.edu/academics/index.html">Academics</a></li>
+        <li><a href="https://und.edu/admissions/index.html">Admissions</a></li>
+        <li><a href="https://und.edu/research/index.html">Research</a></li>
+        <li><a href="https://und.edu/programs/index.html">Programs</a></li>
+        <li><a href="https://und.edu/about/index.html">About UND</a></li>
+      </ul>
+    </nav>
+    <a href="/"><img class="logo-footer" src="Assets\logotype-fullw.svg" title="University of North Dakota"></img></a>
+    <p class="footer-note">© <span id="year"></span> University of North Dakota. All rights reserved.</p>
+  </div>
+</footer>
+ 
+
+
+
+ <script src="script.js"></script>
+
+</body>
+
+</html>
